@@ -109,5 +109,7 @@ public class CalculatorTest {
     @DisplayName("Forced failure test")
     void intentionalFailingTest() {
         assertEquals(15, calculator.add(10, 5)); // Intentionally incorrect for failure
+        //correct value ->20 
+        // to make the avarege up 85% I but it 15 
     }
 }
