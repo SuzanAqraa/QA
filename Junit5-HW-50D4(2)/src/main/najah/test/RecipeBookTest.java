@@ -134,6 +134,14 @@ class RecipeBookTest {
         book.addRecipe(recipe);
         assertEquals("Green Tea", book.deleteRecipe(0)); // triggers line 58
     }
+ @Test
+    @Disabled("Intentionally failing test: recipe not added yet, so deletion will return null instead of name.")
+    @Order(13)
+    @DisplayName("Failing test - trying to delete without adding recipe")
+    void failingTestForDeleteWithoutAdd() {
+
+        assertEquals("Green Tea", book.deleteRecipe(0));
+    }
 
 
 }
